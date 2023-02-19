@@ -32,7 +32,7 @@ pub fn game(input: &str) -> Array {
     let outcome = winner(player.choice, computer.choice);
     let arr = Array::new_with_length(1);
     arr.set(0, outcome.into());
-    arr.set(1, "test".into());
+    arr.set(1, computer.choice.into());
     arr
 }
 
